@@ -90,9 +90,10 @@ public class Usuario implements Serializable {
         return true;
     }
 
-    @Override
     public String toString() {
-        return "Model.Usuario[ idUsuario=" + idUsuario + " ]";
+        return "Usuario{" + "idUsuario=" + idUsuario + ", login=" + login + ", password=" + password + '}';
     }
+
+    
     
 }
