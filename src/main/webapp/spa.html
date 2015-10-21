@@ -13,8 +13,23 @@ and open the template in the editor.
         <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
         <script src="js/app.js"></script>
     </head>
-    <body ng-controller="ctrlPrincipal">
-        <input type="text" ng-model="mensajito"/>
-        {{mensajito}}
+    <body ng-app="estacion">
+        <div ng-controller="ctrlPrincipal">
+            <input type="text" ng-model="mensajito"/>
+            {{mensajito}}
+            <p>La temperatura en esta hora es: {{temperatura}}</p>
+        <table class="table table-bordered">
+            <tr class="success">
+                <th>Hora</th>
+                <th>Temperatura</th>
+                <th>UV</th>
+            </tr>
+            <tr ng-repeat="es in esta">
+                <td>{{es.hora}}</td>            
+                <td>{{es.temperatura}}</td>
+                <td>{{es.uv}}</td>
+            </tr>
+        </table>
+        </div>
     </body>
 </html>
