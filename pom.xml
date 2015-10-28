@@ -39,6 +39,12 @@
       <version>2.4.4</version>
       <type>jar</type>
     </dependency>
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>jsr250-api</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
   <build>
